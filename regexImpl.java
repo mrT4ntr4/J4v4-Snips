@@ -14,7 +14,7 @@ class Checker{
       email = sc.nextLine();
    }
    public boolean validateContact(){
-      Pattern pattern1 = Pattern.compile("\\+(91-)\\(\\d{3}\\)\\(\\d{3}\\)\\(\\d{4}\\)");
+      Pattern pattern1 = Pattern.compile("\\+(91-)\\d{3}-\\d{3}-\\d{4}");
       Matcher m1 = pattern1.matcher(contact);
       
       if (m1.matches()) {
